@@ -8,6 +8,10 @@ We are thrilled to welcome you to the Code Chica++ Program, where you'll embark 
 - **Duration:** 10 weeks
 - **Time:** Saturdays, 11 am - 2 pm (virtually on Zoom)
 
+## Weekly Courses
+
+[Week 1]('/Cohort5/Week1/')
+
 ## What to Expect 🚧
 
 During this program, you'll have the opportunity to:
