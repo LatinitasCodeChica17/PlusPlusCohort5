@@ -10,7 +10,7 @@ We are thrilled to welcome you to the Code Chica++ Program, where you'll embark 
 
 ## Weekly Courses
 
-[Week 1](/Cohort5/Week1/index.html)
+[Week 1](PlusPlusCohort5/Cohort5/Week1/index.html)
 
 ## What to Expect 🚧
 
