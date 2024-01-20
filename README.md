@@ -10,7 +10,7 @@ We are thrilled to welcome you to the Code Chica++ Program, where you'll embark 
 
 ## Weekly Courses
 
-[Week 1]('/Cohort5/Week1/')
+[Week 1](/Cohort5/Week1/)
 
 ## What to Expect 🚧
 
@@ -26,6 +26,8 @@ During this program, you'll have the opportunity to:
 ## Lead Instructor Expectations 💡
 
 Our Lead Instructor is here to support you. They are fluent in HTML, CSS, JavaScript, and other programming languages. They will lead engaging sessions, teach coding curriculum, and be available for questions and guidance both during and outside of class.
+
+You can e-mail your instructor at [codechica2\@latinitasmagazine.org](mailto:codechica2@latinitasmagazine.org?subject=CodeChica++ Help!) to coordinate office hours or additional support.
 
 ## Tentative Activity Schedule 🗓️
 
