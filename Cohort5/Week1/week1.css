@@ -115,3 +115,12 @@ img#html-challenge {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+#survey {
+  text-align: center;
+  padding: 1rem;
+  max-width: 350px;
+  font-size: 1.5;
+  border: 2px dashed var(--code-chica-highlight-color);
+  border-radius: 3px;
+}
