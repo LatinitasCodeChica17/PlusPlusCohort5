@@ -109,7 +109,8 @@ ul.container li {
 }
 
 img#html-challenge {
-  width: 700px;
+  max-width: 600px;
+  width: 50%;
   border: 2px solid var(--code-chica-dark-purple);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
