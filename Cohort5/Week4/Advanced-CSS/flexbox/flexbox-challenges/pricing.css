@@ -1,0 +1,50 @@
+section#challenge {
+  margin-top: 4rem;
+}
+
+a {
+  color:white;
+}
+
+.plan ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plan ul li {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding:10px;
+}
+
+.plan ul li:last-child {
+  border-bottom: 0;
+}
+
+.plan a {
+  text-decoration: none;
+  background:var(--code-chica-highlight-color);
+  padding:10px;
+  color:black;
+  border-radius:4px;
+}
+
+
+.plan h2 {
+  text-transform: uppercase;
+  color: var(--code-chica-pink);
+  letter-spacing: 2px;
+  text-shadow:3px 3px 0 rgba(0,0,0,0.1);
+}
+
+.price {
+  font-size: 50px;
+  font-family: serif;
+  margin: 10px 0;
+}
+
+/* Flex Container!!! */
+.pricing-grid {
+  max-width:750px;
+  margin: 0 auto;
+}

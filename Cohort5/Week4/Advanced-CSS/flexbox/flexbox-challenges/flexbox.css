@@ -1,0 +1,20 @@
+
+/* Some default styles to make each box visible */
+.box {
+  color:white;
+  font-size: 100px;
+  text-align: center;
+  text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+  padding:10px;
+}
+
+#flexbox .box1 { background-color: red;}
+#flexbox .box2 { background-color: orangered;}
+#flexbox .box3 { background-color: orange;}
+#flexbox .box4 { background-color: yellow;}
+#flexbox .box5 { background-color: lime;}
+#flexbox .box6 { background-color: green;}
+#flexbox .box7 { background-color: blue;}
+#flexbox .box8 { background-color: blueviolet;}
+#flexbox .box9 { background-color: violet;}
+#flexbox .box10 { background-color: pink;}
