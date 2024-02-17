@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="./global-assets/latinitas-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <title>Flexbox Pricing</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./pricing.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CodeChica++</h1>
+    </header>
+    <div id="nav-wrapper" has-secondary-nav>
+      <nav id="main-nav" class="flex-nav">
+        <button
+          title="Open main menu"
+          type="button"
+          aria-haspopup="menu"
+          aria-label="Open main menu"
+          aria-expanded="false"
+          aria-controls="full-nav--main"
+          id="mobile-nav-menu"
+        >
+          <span class="visually-hidden">click to open </span>
+          Menu ▼
+        </button>
+        <div id="full-nav--main" aria-label="Main menu">
+          <ul>
+            <li class="logo" id="to-home">
+              <a href="../index.html" aria-label="back to the homepage">CodeChica++</a>
+            </li>
+            <li>
+              <a href="../Course-Overview/index.html">Course Overview</a>
+            </li>
+            <li class="active-page">
+              <a href="../Advanced-CSS/index.html">Advanced CSS</a>
+            </li>
+            <li>
+              <a href="../Advanced-JS/index.html">Advanced JS</a>
+            </li>
+            <li>
+              <a href="../Final-Project/index.html">Final Project</a>
+            </li>
+            <li>
+              <a href="../resources.html">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="sub-nav" class="secondary-nav flex-nav">
+          <button
+          title="Open sub menu"
+          type="button"
+          aria-haspopup="menu"
+          aria-label="Open sub menu"
+          aria-expanded="false"
+          aria-controls="full-nav--sub"
+          id="mobile-nav-sub-menu"
+        >
+          <span class="visually-hidden">click to open </span>
+          Sub Menu ▼
+        </button>
+        <div id="full-nav--sub" aria-label="Sub menu">
+          <ul id="sub-nav">
+          <li>
+            <a href="./index.html">About this section</a>
+          </li>
+          <li>
+            <a href="./what-the-flexbox.html">What the Flexbox?!</a>
+          </li>
+          <li>
+            <a href="./flexbox-playground.html">Flexbox playground</a>
+          </li>
+          <li>
+            <a href="./flexbox-challenge-1.html">Challenge 1</a>
+          </li>
+          <li class="active-section">
+            <a href="#">Challenge 2</a>
+          </li>
+          <li>
+            <a href="./mobile-app.html">Mobile styling</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </div>
+    <main tabindex="0" class="site-wrap">
+    <section>
+      <div class="section--header">
+        <h2 class="title">Challenge 2: Pricing Grid</h2>
+      </div>
+      <article class="section--content">
+        <p>
+          This is a flexbox challenge! Your goal is to align the available pets into a row with 3 columns;
+
+          It should look like this when complete:
+          <br>
+          <img src="../../../../global-assets/challenge-2.png" alt="" width="75%;"/>
+        </p>
+      </article>
+      <section id="challenge">
+        <!-- Flex Container! -->
+        <div class="pricing-grid">
+          <div class="plan plan1">
+            <img src="https://cdn.britannica.com/25/7125-050-67ACEC3C/Abyssinian-sorrel.jpg" width="200px"/>
+            <h2>Cat</h2>
+            <p>Common, yet regarded by many as the worst house pet.</p>
+            <ul class="features">
+              <li>Scratches everything</li>
+              <li>Easily lost for days</li>
+              <li>Kind of a bummer</li>
+            </ul>
+
+            <p class="price">free</p>
+
+            <a href="#" class="cta">😾 Really?</a>
+          </div>
+
+          <div class="plan plan2">
+            <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/activities-fun/10-great-small-dog-breeds/maltese-portrait.jpg" width="200px"/>
+            <h2>Dog</h2>
+            <p>Loving, gentle and caring. Dogs are the best house pet to have and will increase happiness ten fold. </p>
+            <ul class="features">
+              <li>Super Fun</li>
+              <li>Friends love them</li>
+              <li>Plays games</li>
+              <li>Not a cat</li>
+            </ul>
+
+            <p class="price">$90</p>
+
+            <a href="#" class="cta">🐶 Best Deal →</a>
+          </div>
+
+          <div class="plan plan3">
+            <img src="https://www.thesprucepets.com/thmb/Jg5byuBdix-TXtyLk4Xn575K3GE=/6078x0/filters:no_upscale():strip_icc()/low-maintenance-freshwater-fish-4770223-hero-ffb66c229c194e2db4916e88bbd17a15.jpg" width="200px;">
+            <h2>Fish</h2>
+            <p>Cheap n' easy.</p>
+            <ul class="features">
+              <li>Eats flakes</li>
+              <li>Cop out</li>
+              <li>Replaceable</li>
+            </ul>
+
+            <p class="price">$3</p>
+
+            <a href="#" class="cta">🐠</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../../main.js"></script>
+  </body>
+</html>
