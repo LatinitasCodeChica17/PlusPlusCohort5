@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="../global-assets/latinitas-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <title>Course Overview</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html"><h1>CodeChica++</h1></a>
+    </header>
+    <div id="nav-wrapper">
+      <nav id="main-nav" class="flex-nav">
+          <button
+            title="Open main menu"
+            type="button"
+            aria-haspopup="menu"
+            aria-label="Open main menu"
+            aria-expanded="false"
+            aria-controls="full-nav"
+            id="mobile-nav-menu"
+          >
+            <span class="visually-hidden">click to open </span>
+            Menu ▼
+          </button>
+          <div id="full-nav" aria-label="Main menu">
+            <ul>
+              <li class="logo" id="to-home">
+                <a href="../index.html" aria-label="back to the homepage">
+                  CodeChica<span class="highlight">++</span>
+                </a>
+              </li>
+              <li class="active-page">
+                <a href="#">Course Overview</a>
+              </li>
+              <li>
+                <a href="../Advanced-CSS/index.html">Advanced CSS</a>
+              </li>
+              <li>
+                <a href="../Advanced-JS/index.html">Advanced JS</a>
+              </li>
+              <li>
+                <a href="../Final-Project/index.html">Final Project</a>
+              </li>
+              <li>
+                <a href="../resources.html">Resources</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </div>
+    <main id="meat-and-potats" class="site-wrap">
+      <section>
+        <div class="section--header">
+          <h2 class="title">Course Overview</h2>
+        </div>
+        <article class="section--content">
+          <section data-id="week1">
+            <label for="week-1">
+              <a href="../Course-Overview/week1/index.html">Week 1: <span class="subtitle">
+                Course Introduction and HTML/CSS/JS Refresh
+            </span> </a>
+
+          </label>
+            <ul id="week-1">
+              <li>Course Introduction</li>
+              <li>Local Development environment
+                <ul>
+                  <li>(Re-)Download VS Code</li>
+                </ul>
+              </li>
+              <li>Install LiveServer</li>
+              <li>Install Git</li>
+              <li>Refresh Coding Skills</li>
+              <li>Intro to GitHub</li>
+              <li>Introduce Final Project</li>
+              <li>Begin refresh HTML/CSS/JS</li>
+            </ul>
+          </section>
+          <section data-id="week2">
+            <label for="week-2">
+              Week 2:<span class="subtitle"> Foundations and Software Engineering Lifecycle
+            </span></label>
+            <ul id="week-2">
+              <li>Final solidifying of foundations in HTML/CSS/JS</li>
+              <li>Introduce the Software Engineering Lifecycle
+                <ul>
+                  <li>Paola the Product Manager</li>
+                  <li>Diana the Designer</li>
+                  <li>Elena the Engineer</li>
+                </ul>
+              </li>
+              <li>Intro to Web Accessibility</li>
+            </ul>
+          </section>
+          <section data-id="week3">
+            <label for="week-3">Week 3:<span class="subtitle"> Version Control and Final Project Exploration</span></label>
+            <ul id="week-3">
+              <li>Introduce Version control, Git</li>
+              <li>Explore Final Project Template/Code base
+                <ul><li>pull/fork their own copy down</li></ul>
+              </li>
+            </ul>
+          </section>
+          <section data-id="week4">
+            <label for="week-4">
+              Week 4:<span class="subtitle"> Advanced HTML/CSS and Accessibility Review
+            </span></label>
+            <ul id="week-4">
+              <li>Advanced HTML/CSS</li>
+              <li>Accessibility Review and reinforcement</li>
+            </ul>
+          </section>
+          <section data-id="week5">
+            <label for="week-5">
+              Week 5:<span class="subtitle"> Refresher on JS, Advanced JavaScript, and Testing
+            </span></label>
+            <ul id="week-5">
+              <li>Refresher on JS</li>
+              <li>Advanced JavaScript</li>
+              <li>Introduce Testing</li>
+              <li>DOM manipulation</li>
+            </ul>
+          </section>
+          <section data-id="week6">
+            <label for="week-6">Week 6:<span class="subtitle"> Continued JavaScript and Introduction to AJAX</span></label>
+            <ul id="week-6">
+              <li>Refresher on JS</li>
+              <li>Continue testing</li>
+              <li>
+                Introduce network requests
+                <ul>
+                  <li>AJAX</li>
+                  <li>we'll focus on GET requests for this curriculum</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section data-id="weeks-7-8">
+            <label for="week-7-8">Weeks 7-8:<span class="subtitle"> Final Project Work</span></label>
+            <ul id="week-7-8">
+              <li>Final project work</li>
+            </ul>
+          </section>
+          <section data-id="week9">
+            <label for="week-9">Week 9:<span class="subtitle"> Begin Deployment</span>
+            </span></label>
+            <ul id="week-9">
+              <li>Final project work</li>
+              <li>Begin Deployment</li>
+            </ul>
+          </section>
+          <section data-id="week10">
+            <label for="week-10">Week 10:<span class="subtitle"> Project wrap-Up and Showcase</span></label>
+            <ul id="week-10">
+              <li>Finalizing and showcasing the projects.</li>
+              <li>Deployment of projects if not done in the previous class.</li>
+              <li>Course wrap-up and review of key concepts.</li>
+            </ul>
+          </section>
+        </article>
+      </section>
+    </main>
+    <script src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Chica++</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../global-assets/styles.css">
+  </head>
+
+  <body>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>City Name</h1>
+            <ul>
+              <li id="input-city-timestamp"><span id="date"></li>
+              <li id="updated-timestamp">
+                Last Updated: <span id="local-date"></span> local time.</li>
+              <li id="weather-summary"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="no image" id="weather-icon" class="float-left" />
+                <div class="float-left weather-detail">
+                  <strong id="tempNum"></strong>
+                  <span class="temp-units">
+                    <a href="#" id="fahrenheit" class="active">°F</a> |
+                    <a href="#" id="celsius">°C</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Feels Like: <span id=feels-like></span>°</li>
+                <li>Humidity: <span id=humidity>0</span>%</li>
+                <li>Wind: <span id=wind>0</span> mph</li>
+              </ul>
+            </div>
+          </div>
+          <div class="future-forecast-title text-center">
+            <h2>5 Day Forecast:</h2>
+          </div>
+          <div class="future-forecast" id="five-day-forecast">
+          </div>
+          <div class="row justify-content-around">
+            <form role="search" id="city-form" class="mt-5">
+              <input
+              type="search"
+              placeholder="Enter a city..."
+              autofocus="on"
+              autocomplete="off"
+              class="form-control"
+              id="city-input" />
+              <label>type a city name to search the weather by city</label>
+            </div>
+            <input type="submit" id="search" value="Search"/>
+            </form>
+            <button id="locate" class="w-200" aria-label="get weather for my current location"/>My Location</button>
+          </div>
+        </div>
+      </div>
+      <footer class="text-center">
+      <small>
+        <a href="https://github.com/bexter89/weather-app">
+          Open-source code
+        </a>
+          by Rebekah Cruz
+      </small>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
