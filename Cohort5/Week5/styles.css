@@ -261,25 +261,28 @@ nav li.logo a {
   box-shadow: 1px 10px 5px rgba(0,0,0,0.1);
 }
 
-nav#sub-nav, #nav-wrapper.secondary-nav {
+nav#sub-nav,  #sub-nav-2, #nav-wrapper.secondary-nav {
   text-align: center;
   background-color: var(--code-chica-dark-purple);
 }
 
-nav#sub-nav .active-section {
+nav#sub-nav .active-section,
+nav#sub-nav-2 .active-section {
   background-color: var(--code-chica-purple);
   color:var(--code-chica-highlight-color);
 }
-nav#sub-nav .active-section:hover {
+nav#sub-nav .active-section:hover,
+nav#sub-nav-2,.active-section:hover {
   background-color: (0, 0, 0, 0.25)
 }
 
-nav a, #sub-nav a {
+nav a, #sub-nav a, #sub-nav-2 a {
   text-decoration: none;
   color: white;
 }
 
-nav#sub-nav .active-section > a {
+nav#sub-nav .active-section > a
+nav#sub-nav-2, .active-section > a {
   color:var(--code-chica-highlight-color);
 }
 
@@ -305,8 +308,8 @@ nav#sub-nav .active-section > a {
 }
 
  #nav-wrapper[has-secondary-nav] #main-nav li,
- #nav-wrapper[has-secondary-nav] #sub-nav li
-  {
+ #nav-wrapper[has-secondary-nav] #sub-nav li,
+ #nav-wrapper[has-secondary-nav] #sub-nav-2 li {
   border-left: .5px solid #000;
   border-right: .5px solid #000;
   border-bottom: 1px solid #000;
@@ -314,22 +317,26 @@ nav#sub-nav .active-section > a {
   border-radius: 3px 3px 0 0;
 }
 
-#nav-wrapper[has-secondary-nav] #sub-nav li {
+#nav-wrapper[has-secondary-nav] #sub-nav li
+#nav-wrapper[has-secondary-nav] #sub-nav-2 li {
   display: flex;
   align-items: center;
   border: 0;
   border-bottom: .5px solid #000;
 }
 
-#nav-wrapper[has-secondary-nav] #sub-nav li:hover {
+#nav-wrapper[has-secondary-nav] #sub-nav li:hover
+#nav-wrapper[has-secondary-nav] #sub-nav-2 li:hover {
   background-color: rgba(0,0,0,0.2);
 }
 
-#nav-wrapper[has-secondary-nav] #sub-nav li:first-of-type {
+#nav-wrapper[has-secondary-nav] #sub-nav li:first-of-type
+#nav-wrapper[has-secondary-nav] #sub-nav-2 li:first-of-type {
   border-left: 1px solid #000;
   border-radius: 0;
 }
-#nav-wrapper[has-secondary-nav] #sub-nav li:last-of-type {
+#nav-wrapper[has-secondary-nav] #sub-nav li:last-of-type,
+#nav-wrapper[has-secondary-nav] #sub-nav-2 li:last-of-type {
   border-right: 1px solid #000;
   border-radius: 0;
 }

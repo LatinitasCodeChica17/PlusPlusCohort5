@@ -1,6 +1,3 @@
-this is a readme for the flexbox challenge!
-
-
 # Flexbox
 
 There are two main concepts in flexbox:

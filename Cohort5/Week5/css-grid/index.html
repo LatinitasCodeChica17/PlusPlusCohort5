@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <title>Advanced CSS</title>
+    <title>CSS Grid</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
@@ -72,35 +72,63 @@
         </button>
         <div id="full-nav--sub" aria-label="Sub menu">
           <ul id="sub-nav">
+          <li>
+            <a href="../index.html">About this section</a>
+          </li>
           <li class="active-section">
-            <a href="#">About this section</a>
+            <a href="/">What the Flexbox?!</a>
           </li>
           <li>
-            <a href="./what-the-flexbox.html">What the Flexbox?!</a>
+            <a href="./flexbox-challenges/flexbox-playground.html">Flexbox playground</a>
           </li>
           <li>
-            <a href="./flexbox-playground.html">Flexbox playground</a>
+            <a href="./flexbox-challenges/alignment.html">Challenge 1</a>
           </li>
           <li>
-            <a href="./flexbox-challenge-1.html">Challenge 1</a>
+            <a href="./flexbox-challenges/pricing.html">Challenge 2</a>
           </li>
           <li>
-            <a href="./pricing.html">Challenge 2</a>
-          </li>
-          <li>
-            <a href="./mobile-app.html">Mobile styling</a>
+            <a href="./flexbox-challenges/mobile-app.html">Mobile styling</a>
           </li>
         </ul>
         </div>
       </nav>
+      <nav id="sub-nav-2" class="secondary-nav flex-nav">
+        <button
+        title="Open sub menu"
+        type="button"
+        aria-haspopup="menu"
+        aria-label="Open sub menu"
+        aria-expanded="false"
+        aria-controls="full-nav--sub"
+        id="mobile-nav-sub-menu"
+      >
+        <span class="visually-hidden">click to open </span>
+        Sub Menu ▼
+      </button>
+      <div id="full-nav--sub" aria-label="Sub menu">
+        <ul id="sub-nav">
+        <li>
+          <a href="./css-grid/index.html">CSS Grid</a>
+        </li>
+        <li>
+          <a href="./flexbox-challenges/flexbox-playground.html">Flexbox playground</a>
+        </li>
+        <li>
+          <a href="./flexbox-challenges/flexbox-challenge-1.html">Challenge 1</a>
+        </li>
+        <li>
+          <a href="./flexbox-challenges/flexbox/alignment.html">Challenge 2</a>
+        </li>
+        <li>
+          <a href="./flexbox-challenges/flexbox/mobile-app.html">Mobile styling</a>
+        </li>
+      </ul>
+      </div>
+      </nav>
     </div>
     <main tabindex="0" class="site-wrap">
-      <section>
-        <div class="section--header">
-          <h2 class="title">Welcome Cohort 22!</h2>
-          <div class="subtitle">January - April 2024</div>
-        </div>
-        <article class="section--content">
+      <h1>Flexbox 101</h1>
       <p>
         This is a flexbox tutorial. Here you will learn the basics of flexbox for responsive layout design. You will also find exteral resources for deeper dives into flexbox.
       </p>
@@ -140,23 +168,7 @@
           </ul>
         </p>
       </section>
-            <section>
-        <h2>
-          Additional resources
-        </h2>
-        <p>
-          <ul>
-            <li>
-              <h3>Challenge 1</h3>
-              <p>
-
-              </p>
-            </li>
-          </ul>
-        </p>
-      </section>
     </main>
-  </div>
-  <script src="../main.js"></script>
-</body>
+    <script src="../../main.js"></script>
+  </body>
 </html>
