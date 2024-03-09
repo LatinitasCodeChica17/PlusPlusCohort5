@@ -3,15 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Dashboard</title>
+    <title>Weather Landing Page</title>
   </head>
   <body>
     <header>
-      <h1>Weather Dashboard</h1>
+      <h1>Welcome to the Weather App!</h1>
+      <h2>Type in your city and state:</h2>
     </header>
-
     <main>
-      <!-- Weather information will be displayed here -->
+      <form action="">
+        <label for="first">
+         City:
+        </label>
+        <input type="text"
+        id="first"
+        name="first"
+        placeholder="Enter your City" required>
+
+        <label for="state">
+        State:
+        </label>
+        <input type="state"
+        id="state"
+        name="state"
+        placeholder="Enter your state" required>
+
+        <div class="wrap">
+          <button type="submit">
+            submit
+          </button>
+        <div>
+      </form>
+      </div>
     </main>
   </body>
 </html>
