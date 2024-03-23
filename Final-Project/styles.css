@@ -1,1 +1,35 @@
 /* Add your styles here */
+body {
+  font-family: arial, sans-serif;
+  color: grey;
+  text-align: left;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.weather-app {
+  border: 1px solid lightgray;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.row {
+  display: flex;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
