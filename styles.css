@@ -355,6 +355,10 @@ nav#sub-nav .active-section > a {
   border-bottom: none;
 }
 
+#main-nav {
+  background-color: var(--code-chica-darkest-purple);
+}
+
 li.active-page > a, li.active-section > a {
   color:var(--code-chica-highlight-color);
   font-weight: 500;
