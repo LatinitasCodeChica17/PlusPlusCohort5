@@ -10,13 +10,7 @@ body {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.weather-app {
-  padding: 15px;
-  border-radius: 10px;
-  margin: 20px auto;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .row {
