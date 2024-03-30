@@ -1,4 +1,26 @@
-/* Add your styles here */
+:root{
+  --sunnyLight: #faf0ca;
+  --sunnyMedium:#e7d7a6;
+  --sunnyDark: #f4d35e;
+  --cloudyLight: #d9d9d9;
+  --cloudyMedium: #8bb4d0;
+  --cloudyDark: #494c4e;
+  --chillyMedium:#8c6dc5;
+  --chillyLight:#8b79d9;
+  --chillyDark:#6f46a6;
+  --windyMedium:#d6c49c;
+  --windyLight:#c1dbaa;
+  --windyDark:#6a8eae;
+  --snowyLight:#caf0f8;
+  --snowyMedium:#a5d6f2;
+  --snowyDark:#7cb6ec;
+  --drizzleLight:#f0f3bd;
+  --drizzleMedium:#479a53;
+  --drizzleDark:#00a896;
+  --heavyrainLight:#6081a9;
+  --heavyrainMedium:#566f9f;
+  --heavyrainDark:#2a5379;
+}
 body {
   font-family: arial, sans-serif;
   background-color: aliceblue;
