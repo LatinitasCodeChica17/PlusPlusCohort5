@@ -20,34 +20,12 @@
   --heavyrainLight:#6081a9;
   --heavyrainMedium:#566f9f;
   --heavyrainDark:#2a5379;
-  --code-chica-purple: #722a81;
-  --code-chica-dark-purple: #4E008E;
-  --code-chica-darkest-purple: #360063;
-  --code-chica-dark-hover: rgba(122, 0, 223, 0.25);
-  --code-chica-highlight-color: #ff6900;
-  --code-chica-pink: #c81b74;
-  --code-chica-pale-pink: #f78da7;
 }
 body {
   font-family: arial, sans-serif;
-  background-color: var(--code-chica-purple)
-}
-.codeChicaDPu {
-background-color:var(--code-chica-darkest-purple)
-}
-a:link, a:visited{
-  color: var(--code-chica-pink);
-  justify-content: right;
+  background-color: aliceblue;
 }
 
-p{
-  color: white;
-}
-
-
-a:hover{
-  color: var(--code-chica-pale-pink);
-}
 .container {
   width: 100%;
   padding-left: 15px;
@@ -68,7 +46,7 @@ ul {
   margin: 0 0 10px;
   padding: 0;
   display: flex;
-  justify-content:right ;
+  justify-content: center;
 }
 
 li {
