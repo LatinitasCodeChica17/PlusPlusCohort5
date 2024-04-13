@@ -171,7 +171,7 @@ form.searchforuser  button{
   float: left;
   width: 10%;
   padding: 19px;
-  background: #b8a66c;
+  background: #8960bbae;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -205,4 +205,38 @@ form.searchforuser::after {
 .outside-weather{
   position: absolute;
   border-radius: 25px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+
+  gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+.row div {
+  width: 50%;
+}
+
+.noMargin {
+  margin: 0px;
+}
+
+.blurb1{
+  background-color: rgb(253, 253, 253);
+}
+
+.image {
+  background-color: rgb(253, 253, 253);
+}
+
+.logo {
+  background-color: rgb(255, 255, 255);
+}
+
+.blurb2 {
+  background-color: rgb(255, 255, 255);
 }
