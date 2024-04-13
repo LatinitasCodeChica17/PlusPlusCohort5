@@ -30,9 +30,24 @@
 }
 body {
   font-family: arial, sans-serif;
-  background-color: aliceblue;
+  background-color: var(--code-chica-purple)
+}
+.codeChicaDPu {
+background-color:var(--code-chica-darkest-purple)
+}
+a:link, a:visited{
+  color: var(--code-chica-pink);
+  justify-content: right;
 }
 
+p{
+  color: white;
+}
+
+
+a:hover{
+  color: var(--code-chica-pale-pink);
+}
 .container {
   width: 100%;
   padding-left: 15px;
@@ -53,7 +68,7 @@ ul {
   margin: 0 0 10px;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content:right ;
 }
 
 li {
@@ -91,6 +106,7 @@ footer img {
   width: auto;
 }
 
+
 #about p {
   max-width: 50%;
 }
@@ -126,4 +142,40 @@ footer img {
 li {
   list-style: none;
   margin: 1rem;
+}
+=======
+* {
+  box-sizing: border-box;
+}
+/* Style the search field */
+form.searchforuser input[type=text] {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+/*styling the button */
+form.searchforuser  button{
+  float: left;
+  width: 10%;
+  padding: 19px;
+  background: #b8a66c;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.searchforuser button:hover {
+  background: #a9b6c1;
+}
+
+/* Clear floats */
+form.searchforuser::after {
+  content: "";
+  clear: both;
+  display: table;
 }
