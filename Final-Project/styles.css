@@ -28,13 +28,22 @@
   --code-chica-pink: #c81b74;
   --code-chica-pale-pink: #f78da7;
 }
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   font-family: arial, sans-serif;
-  background-color: var(--code-chica-purple)
+  background-color: var(--code-chica-purple);
 }
+
 .codeChicaDPu {
-background-color:var(--code-chica-darkest-purple)
+  background-color:var(--code-chica-darkest-purple);
 }
+
 a:link, a:visited{
   color: var(--code-chica-pink);
   justify-content: right;
@@ -143,10 +152,11 @@ li {
   list-style: none;
   margin: 1rem;
 }
-=======
+
 * {
   box-sizing: border-box;
 }
+
 /* Style the search field */
 form.searchforuser input[type=text] {
   padding: 10px;
@@ -178,4 +188,21 @@ form.searchforuser::after {
   content: "";
   clear: both;
   display: table;
+}
+
+.window {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.window-frame {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.outside-weather{
+  position: absolute;
+  border-radius: 25px;
 }
