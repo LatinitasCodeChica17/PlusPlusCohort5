@@ -37,6 +37,7 @@ html {
 
 body {
   font-family: arial, sans-serif;
+  font-size: 16px;
   background-color: var(--code-chica-purple);
 }
 
@@ -51,6 +52,20 @@ a:link, a:visited{
 
 p{
   color: white;
+}
+
+#current-temp{
+  font-size: 3rem;
+
+}
+
+.temp-type{
+  font-size: 16px;
+  color: var(--code-chica-pale-pink);
+}
+
+.active{
+color:var(--code-chica-darkest-purple) ;
 }
 
 
@@ -69,6 +84,7 @@ a:hover{
 .row {
   display: flex;
 }
+
 .column {
   flex: 50%;
 }
