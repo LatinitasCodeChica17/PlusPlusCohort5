@@ -68,3 +68,40 @@ footer img {
   height: 50px;
   width: auto;
 }
+
+* {
+  box-sizing: border-box;
+}
+/* Style the search field */
+form.searchforuser input[type=text] {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+/*styling the button */
+form.searchforuser  button{
+  float: left;
+  width: 10%;
+  padding: 19px;
+  background: #b8a66c;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.searchforuser button:hover {
+  background: #a9b6c1;
+}
+
+/* Clear floats */
+form.searchforuser::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
