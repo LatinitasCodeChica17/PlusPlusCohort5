@@ -17,34 +17,35 @@ function formatDate(timestamp) {
 
 function changeBackground(theme, weatherCode) {
   let htmlBody = document.querySelector('html')
+   // theme will be the light or dark colors for our weather codes
 
   //thunderstorm
-  if (CONDITION) {
-    // do something
+  if (weatherCode >= 200 && weatherCode <= 299) {
+    // do something to show its a thunderstorm 
   }
   //drizzle
-  if (CONDITION) {
-    // do something
+  if (weatherCode >=300 && weatherCode <=299) {
+    // do something to show its drizzling
   }
   // rain
-  if (CONDITION) {
-    // do something
+  if (weatherCode >=500 && weatherCode <=599) {
+    // do something to show its raining
   }
   //snow
-  if (CONDITION) {
-    // do something
+  if (weatherCode >=600 && weatherCode <=699) {
+    // do something its snowing
   }
   // atmosphere/fog
-  if (CONDITION) {
-    // do something
+  if (weatherCode >=700 && weatherCode <=799) {
+    // do something to show its foggy
   }
   // clear
-  if (CONDITION) {
-    // do something
+  if (weatherCode =800) {
+    // do something to show its clear
   }
   //clouds
-  if (CONDITION) {
-    // do something
+  if (weatherCode >=800 && weatherCode <=809) {
+    // do something to show its cloudy
   }
 }
 
