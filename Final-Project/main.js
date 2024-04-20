@@ -2,7 +2,6 @@
 let apiKey = "bafdfac4d6d7b1fc3d3952df39f393b7";
 let pollenApiKey = "AIzaSyCxSohux2e71t1oNNM0PllEaDCoKwpwmDI"
 let apiBaseURL = `https://api.openweathermap.org/data/2.5/weather?`;
-let fullPath = `https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}`
 let pollenBaseURL =  `https://pollen.googleapis.com/v1/forecast:lookup?key=${pollenApiKey}`;
 let fahTemp = 0;
 let feelsTemp = 0;
@@ -11,6 +10,7 @@ let fiveDayFahLowTemp = [];
 let theme = 'daytime';
 let lat = 0;
 let long = 0;
+let futureApiParams = `lat=${lat}&lon=${long}&appid=${apiKey}`;
 let daysDisplayed = 1;
 let pollenParams = ''
 let cityName = window.location.search.split("=")[1];
@@ -73,6 +73,8 @@ let weatherSummary;
 let weatherIcon = document.querySelector('#weather-icon')
 let windowBackgroundImage=document.getElementsByClassName("outside-weather")
 let allergyList = document.querySelector('#daily-allergies')
+let futureForecastList = document.querySelector('#seven-day-forecast')
+let clothingSuggestion = document.querySelector('#suggested-clothing')
 
 
 // Function to fetch weather data from the API
@@ -106,11 +108,59 @@ function showPollenInfo(responseData) {
 }
 
 // ⭐️ ⭐️ ⭐️ Aolani will add code here to display the suggested clothing
-function showSuggestedClothing(weatherType) {
+function showSuggestedClothing(weatherCode) {
+  console.log(weatherCode)
+  //thunderstorm
+  if (weatherCode >= 200 && weatherCode <= 299) {
+    // do something to show its a thunderstorm
+  }
+  //drizzle
+  if (weatherCode >=300 && weatherCode <=299) {
+    // do something to show its drizzling
+  }
+  // rain
+  if (weatherCode >=500 && weatherCode <=599) {
+    // do something to show its raining
+  }
+  //snow
+  if (weatherCode >=600 && weatherCode <=699) {
+    // do something its snowing
+  }
+  // atmosphere/fog
+  if (weatherCode >=700 && weatherCode <=799) {
+    clothingSuggestion.innerHTML =
+    `<img src="./assets/clothing/cloudy.jpg" alt="foggy" width="300">
+    <p>It's foggy outside, wear a light jacket</p>
+    `
+  }
+  // clear
+  if (weatherCode =800) {
+    // do something to show its clear
+  }
+  //clouds
+  if (weatherCode >=800 && weatherCode <=809) {
+    // do something to show its cloudy
+  }
 }
 
-//⭐️ ⭐️ ⭐️ leslie and rebekah will work on this
-function getFiveDayForecast(city) {
+function getSevenDayForecast(coords) {
+  let futureForecastURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coords.lat}&lon=${coords.lon}&exclude=alert,minutely,current,hourly&appid=${apiKey}&units=imperial`
+  axios.get(`${futureForecastURL}`).then(showSevenDayForecast)
+}
+
+function showSevenDayForecast(responseData) {
+  let dailyData = responseData.data.daily;
+  let futureForecast = ''
+  dailyData.forEach((day, index) => {
+    day.weather[0];
+    futureForecast += `<li>
+      <p>${formatDate(day.dt)}</p>
+      <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}.png" alt="${day.weather[0].description}">
+      <p>${day.weather[0].description}</p>
+      <p>${day.weather[0].main}</p>
+    </li>`
+  })
+  futureForecastList.innerHTML = futureForecast;
 }
 
 // Function to display the weather information
@@ -119,9 +169,11 @@ function showWeatherInfo(responseData) {
   long = responseData.data.coord.lon;
   let summary = responseData.data.weather[0].description;
   let icon = responseData.data.weather[0].icon;
-
+  showSuggestedClothing(responseData.data.weather[0].id)
   pollenParams = `&location.longitude=${long}&location.latitude=${lat}&days=${daysDisplayed}`;
   searchPollenData();
+
+  getSevenDayForecast({lat: lat, lon: long});
 
   cityNameH1.innerText = responseData.data.name;
   temp.innerText = responseData.data.main.temp;
@@ -130,6 +182,7 @@ function showWeatherInfo(responseData) {
   let coord = responseData.data.coord;
   weatherIcon.setAttribute('src', iconURL)
   weatherIcon.setAttribute('alt', summary)
+
 }
 
 function updateDate(timeZoneOffset, weatherCode) {
