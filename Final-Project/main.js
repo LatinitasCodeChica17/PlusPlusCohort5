@@ -72,6 +72,7 @@ let windEl = document.getElementById("windEl")
 let weatherSummary;
 let weatherIcon = document.querySelector('#weather-icon')
 let windowBackgroundImage=document.getElementsByClassName("outside-weather")
+let allergyList = document.querySelector('#daily-allergies')
 
 
 // Function to fetch weather data from the API
@@ -87,7 +88,17 @@ function searchPollenData() {
 
 // ⭐️ ⭐️ ⭐️  Olivia will add code here to display the pollen data
 function showPollenInfo(responseData) {
-  console.log(responseData.data);
+  let weatherData = responseData.data.dailyInfo[0].plantInfo;
+  console.log(weatherData);
+  weatherData = weatherData.filter((item)=> {
+    return item.inSeason === true;
+  })
+  console.log(weatherData)
+  // weatherData.forEach((plant) => {
+  //   console.log(plant)
+  // })
+
+  allergyList.innerHTML = weatherData;
 }
 
 // ⭐️ ⭐️ ⭐️ Aolani will add code here to display the suggested clothing
@@ -95,7 +106,7 @@ function showSuggestedClothing(weatherType) {
 }
 
 //⭐️ ⭐️ ⭐️ leslie and rebekah will work on this
-fucntion getFiveDayForecast(city) {
+function getFiveDayForecast(city) {
 }
 
 // Function to display the weather information
