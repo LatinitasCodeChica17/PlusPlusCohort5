@@ -25,37 +25,40 @@ function formatDate(timestamp) {
 }
 
 function changeTheme(weatherCode) {
-  let htmlBody = document.querySelector('body')
-
+  let body = document.querySelector('body')
+let background = document.querySelector('html')
 
   //thunderstorm
   if (weatherCode >= 200 && weatherCode <= 299) {
-    htmlBody.style.color='var(--heavyrainDark)'
+    body.style.color='var(--heavyrainDark)'
+    background.style.background= 'url("./assets/weather_bgs/rain1.jpeg")'
   }
   //drizzle
   if (weatherCode >=300 && weatherCode <=299) {
-    htmlBody.style.color='var(--drizzlemedium)'
+    body.style.color='var(--drizzlemedium)'
   }
   // rain
   if (weatherCode >=500 && weatherCode <=599) {
-    htmlBody.style.color='var(--heavyrainMedium)'
+    body.style.color='var(--heavyrainMedium)'
   }
   //snow
   if (weatherCode >=600 && weatherCode <=699) {
-    htmlBody.style.color='var(--snowyDark)'
+    body.style.color='var(--snowyDark)'
   }
   // atmosphere/fog
   if (weatherCode >=700 && weatherCode <=799) {
-    htmlBody.style.color='var(--windyDark)'
+    body.style.color='var(--windyDark)'
   }
   // clear
   if (weatherCode =800) {
-    htmlBody.style.color='var(--sunnyDark)'
+    body.style.color='var(--sunnyDark)'
   }
   //clouds
   if (weatherCode >=800 && weatherCode <=809) {
-    htmlBody.style.color='var(--cloudyDark)'
+    body.style.color='var(--cloudyDark)'
+    background.style.background= 'url("./assets/weather_bgs/cloudy2.jpeg")'
   }
+  
 }
 
 
