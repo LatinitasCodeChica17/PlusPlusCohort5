@@ -28,31 +28,70 @@
       </nav>
     </header>
     <main class="container weather-app ">
-      <div class="row" id="hero">
+      <div id="hero">
         <h1 class="center">Weather App</h1>
-        <div> Search bar</div>
-        <div> search button</div>
+        <form class="searchforuser" action="action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
       </div>
       <div>
         <h2>City Name</h2>
       </div>
       <div>
         <h3>Current Weather</h3>
-        <div class="window-frame">
+        <!-- <div class="window-frame">
           <img class="outside-weather" src="./assets/weather_bgs/sunny1.jpg"   width="400"
           height="337"
           style="width: 490px; height: 490px; object-fit: cover;"/>
           <img class="window" src="./assets/weather_bgs/window.png" width="500" />
+        </div> -->
+      </div>
+      <div class="row" id="temperature"> 
+        <div >
+          <div class="current-temp">
+            <p>
+              current temp:
+              <br>
+              <span id="current-temp">75</span>
+            </p>
+          </div>
+          <div class="column">
+          <p class="temp-type active" id="fTemp">f</p>
+          <p class="temp-type" id="cTemp">c</p>
+          </div>
         </div>
+        <div class="column">
+        <p>
+          feels like:
+          <!-- this value will be dynamically updated -->
+          <span id="tempFeelsLike">79</span> 
+        </p>
+        <p id="humEl" >
+          humidity:
+          <span id="humidity">25%</span>
+        </p>
+        <p id="windEl">
+          wind speed:
+          <span id="wind-speed">5mph</span>
+        </p>
+        </div>  
       </div>
       <div>
-        Weather Details goes here
+     <h3>Allergies</h3>
+     <p>Summary</p>
+     <div class="allergen"><p> pollen, grass, etc.</p></div>
+    
+       
       </div>
       <div>
-        Allergens go here
-      </div>
-      <div>
-        Suggested clothing will go here
+        <h3>Suggested Clothing</h3>
+        <div class="clothing">
+          <p>t-shirt, jeans, shorts</p>
+          <img alt="clothing" src="./assets/latinitas-logo--long.webp" width="50"/>
+        </div>
+        
       </div>
       <div>
         7 Day forecast goes here

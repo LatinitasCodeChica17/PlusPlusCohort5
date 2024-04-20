@@ -17,49 +17,51 @@ function formatDate(timestamp) {
 
 function changeBackground(theme, weatherCode) {
   let htmlBody = document.querySelector('html')
+   // theme will be the light or dark colors for our weather codes
 
   //thunderstorm
-  if (CONDITION) {
-    // do something
+  if (weatherCode >= 200 && weatherCode <= 299) {
+    // do something to show its a thunderstorm 
   }
   //drizzle
-  if (CONDITION) {
-    // do something
+  if (weatherCode >=300 && weatherCode <=299) {
+    // do something to show its drizzling
   }
   // rain
-  if (CONDITION) {
-    // do something
+  if (weatherCode >=500 && weatherCode <=599) {
+    // do something to show its raining
   }
   //snow
-  if (CONDITION) {
-    // do something
+  if (weatherCode >=600 && weatherCode <=699) {
+    // do something its snowing
   }
   // atmosphere/fog
-  if (CONDITION) {
-    // do something
+  if (weatherCode >=700 && weatherCode <=799) {
+    // do something to show its foggy
   }
   // clear
-  if (CONDITION) {
-    // do something
+  if (weatherCode =800) {
+    // do something to show its clear
   }
   //clouds
-  if (CONDITION) {
-    // do something
+  if (weatherCode >=800 && weatherCode <=809) {
+    // do something to show its cloudy
   }
 }
 
 
 //grab elements from the dom to manipulate, and give them names
-let cityNameH1 = document.querySelector("h1");
-let cityNameInput;
-let fTemp;
-let cTemp;
-let temp;
-let tempFeelsLike;
-let humEl;
-let windEl;
+let cityNameH1 = document.querySelector("h2");
+let cityNameInput; //skip
+let fTemp= document.getElementById("fTemp")
+let cTemp = document.getElementById("cTemp")
+let temp = document.getElementById("current-temp");
+let tempFeelsLike = document.getElementById("tempFeelsLike")
+let humEl = document.getElementById("humEl")
+let windEl = document.getElementById("windEl")
 let weatherSummary;
 let weatherIcon;
+let windowBackgroundImage=document.getElementsByClassName("outside-weather")
 
 
 // Function to fetch weather data from the API
@@ -70,8 +72,9 @@ function searchByCity(city) {
 
 
 // Function to display the weather information
-fuction showWeatherInfo(responseData) {
+function showWeatherInfo(responseData) {
   // do something!
+  temp.innerText = //some api data value for temp. 
 }
 
 searchByCity("New York");
