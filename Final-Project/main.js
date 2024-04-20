@@ -121,11 +121,17 @@ function showSuggestedClothing(weatherCode) {
   // rain
   if (weatherCode >=500 && weatherCode <=599) {
     // do something to show its raining
-  }
+  } clothingSuggestion.innerHTML =
+  `<img src="./assets/clothing/light rain" alt="raining" width="300">
+  <p>It's raining outside, wear a rain jacket and bring an umbrella</p>
+  `
   //snow
   if (weatherCode >=600 && weatherCode <=699) {
     // do something its snowing
-  }
+  }clothingSuggestion.innerHTML = 
+  `<img src="./assets/clothing/snowing.jpg" alt="snow" width="300">
+  <p>It's snowing outside, wear a puffer jacket and snow boots</p>
+  `
   // atmosphere/fog
   if (weatherCode >=700 && weatherCode <=799) {
     clothingSuggestion.innerHTML =
@@ -135,7 +141,9 @@ function showSuggestedClothing(weatherCode) {
   }
   // clear
   if (weatherCode =800) {
-    // do something to show its clear
+    clothingSuggestion.innerHTML =
+    `<img src="./assets/clothing/sunny.jpg" alt="clear" width="300">
+    <p>It's sunny outside, wear shorts and short sleeve shirt</p>
   }
   //clouds
   if (weatherCode >=800 && weatherCode <=809) {
