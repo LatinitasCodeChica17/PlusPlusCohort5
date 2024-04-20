@@ -24,37 +24,37 @@ function formatDate(timestamp) {
   return week[day];
 }
 
-function changeBackground(theme, weatherCode) {
-  let htmlBody = document.querySelector('html')
-   // theme will be the light or dark colors for our weather codes
+function changeTheme(weatherCode) {
+  let htmlBody = document.querySelector('body')
+
 
   //thunderstorm
   if (weatherCode >= 200 && weatherCode <= 299) {
-    // do something to show its a thunderstorm
+    htmlBody.style.color='var(--heavyrainDark)'
   }
   //drizzle
   if (weatherCode >=300 && weatherCode <=299) {
-    // do something to show its drizzling
+    htmlBody.style.color='var(--drizzlemedium)'
   }
   // rain
   if (weatherCode >=500 && weatherCode <=599) {
-    // do something to show its raining
+    htmlBody.style.color='var(--heavyrainMedium)'
   }
   //snow
   if (weatherCode >=600 && weatherCode <=699) {
-    // do something its snowing
+    htmlBody.style.color='var(--snowyDark)'
   }
   // atmosphere/fog
   if (weatherCode >=700 && weatherCode <=799) {
-    // do something to show its foggy
+    htmlBody.style.color='var(--windyDark)'
   }
   // clear
   if (weatherCode =800) {
-    // do something to show its clear
+    htmlBody.style.color='var(--sunnyDark)'
   }
   //clouds
   if (weatherCode >=800 && weatherCode <=809) {
-    // do something to show its cloudy
+    htmlBody.style.color='var(--cloudyDark)'
   }
 }
 
@@ -121,17 +121,11 @@ function showSuggestedClothing(weatherCode) {
   // rain
   if (weatherCode >=500 && weatherCode <=599) {
     // do something to show its raining
-  } clothingSuggestion.innerHTML =
-  `<img src="./assets/clothing/light rain" alt="raining" width="300">
-  <p>It's raining outside, wear a rain jacket and bring an umbrella</p>
-  `
+  }
   //snow
   if (weatherCode >=600 && weatherCode <=699) {
     // do something its snowing
-  }clothingSuggestion.innerHTML = 
-  `<img src="./assets/clothing/snowing.jpg" alt="snow" width="300">
-  <p>It's snowing outside, wear a puffer jacket and snow boots</p>
-  `
+  }
   // atmosphere/fog
   if (weatherCode >=700 && weatherCode <=799) {
     clothingSuggestion.innerHTML =
@@ -141,9 +135,7 @@ function showSuggestedClothing(weatherCode) {
   }
   // clear
   if (weatherCode =800) {
-    clothingSuggestion.innerHTML =
-    `<img src="./assets/clothing/sunny.jpg" alt="clear" width="300">
-    <p>It's sunny outside, wear shorts and short sleeve shirt</p>
+    // do something to show its clear
   }
   //clouds
   if (weatherCode >=800 && weatherCode <=809) {
@@ -178,6 +170,7 @@ function showWeatherInfo(responseData) {
   let summary = responseData.data.weather[0].description;
   let icon = responseData.data.weather[0].icon;
   showSuggestedClothing(responseData.data.weather[0].id)
+  changeTheme(responseData.data.weather[0].id)
   pollenParams = `&location.longitude=${long}&location.latitude=${lat}&days=${daysDisplayed}`;
   searchPollenData();
 
