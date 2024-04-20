@@ -4,19 +4,15 @@
     <title>Weather Dashboard</title>
     <meta charset="UTF-8" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/cd3939f2c6.js"
-      crossorigin="anonymous"
-		></script>
+    <script src="https://kit.fontawesome.com/7624c19a74.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="./styles.css">
   </head>
-
   <body>
     <header>
       <nav id="main-nav" class="flex-nav">
         <div id="full-nav" aria-label="Main menu">
           <ul>
-            <li class="logo" id="to-home">
+            <li id="to-home">
               <a href="./index.html" aria-label="back to the homepage">
                 Home
             </li>
@@ -27,37 +23,42 @@
         </div>
       </nav>
     </header>
-    <main class="container weather-app ">
-      <div id="hero">
-        <h1 class="center">Weather App</h1>
-        <form class="searchforuser" action="action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-
-      </div>
-      <div>
+    <main class="container weather-app center">
+      <h1 class="">Jupiter Weather</h1>
+      <label for="city">Search for a new city</label>
+      <form action="/Final-Project/weatherDetails.html" method="GET">
+        <input
+        name="city"
+        type="search"
+        placeholder="Enter a city..."
+        autofocus="on"
+        autocomplete="off"
+        class="form-control"
+        id="city-input" />
+        <button>Search</button>
+      </form>
+      <div class="">
+        Showing Current Weather for:
         <h2>City Name</h2>
       </div>
       <div>
         <h3>Current Weather</h3>
-        <!-- <div class="window-frame">
+        <div class="window-frame">
           <img class="outside-weather" src="./assets/weather_bgs/sunny1.jpg"   width="400"
           height="337"
           style="width: 490px; height: 490px; object-fit: cover;"/>
           <img class="window" src="./assets/weather_bgs/window.png" width="500" />
-        </div> -->
+        </div>
       </div>
-      <div class="row" id="temperature"> 
-        <div >
-          <div class="current-temp">
-            <p>
-              current temp:
+      <div class="row" id="temperature">
+        <div class="column">
+          <div id="weatherDetails">
+            <img src="" alt="no image" id="weather-icon" />
+            <p class="current-temp">
+            current temp:
               <br>
               <span id="current-temp">75</span>
             </p>
-          </div>
-          <div class="column">
           <p class="temp-type active" id="fTemp">f</p>
           <p class="temp-type" id="cTemp">c</p>
           </div>
@@ -66,7 +67,7 @@
         <p>
           feels like:
           <!-- this value will be dynamically updated -->
-          <span id="tempFeelsLike">79</span> 
+          <span id="tempFeelsLike">79</span>
         </p>
         <p id="humEl" >
           humidity:
@@ -76,14 +77,12 @@
           wind speed:
           <span id="wind-speed">5mph</span>
         </p>
-        </div>  
+        </div>
       </div>
       <div>
      <h3>Allergies</h3>
      <p>Summary</p>
      <div class="allergen"><p> pollen, grass, etc.</p></div>
-    
-       
       </div>
       <div>
         <h3>Suggested Clothing</h3>
@@ -91,7 +90,7 @@
           <p>t-shirt, jeans, shorts</p>
           <img alt="clothing" src="./assets/latinitas-logo--long.webp" width="50"/>
         </div>
-        
+
       </div>
       <div>
         7 Day forecast goes here

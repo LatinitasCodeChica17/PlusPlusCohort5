@@ -1,84 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Weather Dashboard</title>
+    <title>Jupiter Weather Dashboard</title>
     <meta charset="UTF-8" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/cd3939f2c6.js"
-      crossorigin="anonymous"
-		></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7624c19a74.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="./styles.css">
   </head>
 
   <body>
     <header>
-      <nav id="main-nav" class="flex-nav codeChicaDPu">
+      <nav id="main-nav" class="flex-nav">
         <div id="fullnav" aria-label="Main menu">
           <ul>
-            <li class="logo codeChicaPi" id="to-home">
-              <a href="#" aria-label="back to the homepage">
-                Home
-              </a>
+            <li id="to-home">
+              <a href="#" aria-label="back to the homepage"> Home </a>
             </li>
-            <i class="fa-regular fa-circle-xmark"></i>
             <li>
               <a href="./about.html">About</a>
             </li>
-            <li> Logo
-            </li>
+            <li>Logo</li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="container">
-      <div class="column" id="hero">
-
-        <h1 class="center">Weather App</h1>
-
-         <form class="searchforuser" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-
+    <main class="container weather-app center">
+      <h1 class="">Welcome to Jupiter✨</h1>
+      <div id="hero">
+        <img src="./assets/jupiter-logo.png" alt="weather app" width="400" />
+        <form action="/Final-Project/weatherDetails.html" method="GET">
+          <label class="sr-only" for="city">Enter a city name</label>
+          <input
+          name="city"
+          type="search"
+          placeholder="Enter a city..."
+          autofocus="on"
+          autocomplete="off"
+          class="form-control"
+          id="city-input" />
+          <button>Search</button>
+        </form>
       </div>
 
-
-
-
-      
-      
-      <div class="row">
-        <div class="blurb1">
-        
-          Code Chica offers a free coding program designed for girls aged 14-18 to learn HTML, CSS, and JavaScript. Participants are organized into small cohort groups of around 10 students, meeting every Saturday for 8 weeks. Throughout the program, they collaborate with instructors and guest speakers who bring expertise in computer science, engineering, and related fields. Upon completing the course, participants not only gain valuable experience but also receive a cash stipend as a rewarding outcome.
-        
-          
+      <div class="grid-wrapper">
+        <div class="how-to">to use this app, type a city into the search bar</div>
+        <div class="blurb">
+            <span class="strapline">this app was created as part of CodeChica++ Cohort 5's final project.</span>
+            Code Chica offers a free coding program designed for girls aged 14-18
+            to learn HTML, CSS, and JavaScript. Participants are organized into
+            small cohort groups of around 10 students, meeting every Saturday for
+            8 weeks. Throughout the program, they collaborate with instructors and
+            guest speakers who bring expertise in computer science, engineering,
+            and related fields. Upon completing the course, participants not only
+            gain valuable experience but also receive a cash stipend as a
+            rewarding outcome.
+          </p>
         </div>
-        <div class="image">
-          two
-        </div>
+        <img src="../global-assets/code-chica-plusplus.png" width="350"/>
       </div>
-
-      <div class="row">
-        <div class="logo">
-
-          three
-        </div>
-        <div class="blurb2">
-          four
-        </div>
-      </div>
-
-      
-
-
-
     </main>
     <footer class="center">
-      <img src="assets/latinitas-logo--long.webp" alt="Code Chica logo" />
-      <p>Coded by: <a href=about.html>Code Chica ++ Cohort 5</a></p>
+      <img src="assets/latinitas-logo--long.webp" alt="Code Chica logo" width="30" />
+      <p>Coded by: <a href="about.html">Code Chica ++ Cohort 5</a></p>
     </footer>
-  <script src="./main.js"></script>
   </body>
 </html>
