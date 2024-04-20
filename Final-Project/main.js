@@ -85,9 +85,13 @@ function searchPollenData() {
 };
 
 function showPollenInfo(responseData) {
+  // Olivia will add code here to display the pollen data
   console.log(responseData.data);
 }
 
+function showSuggestedClothing(weatherType) {
+  // Aolani will add code here to display the suggested clothing
+}
 
 // Function to display the weather information
 function showWeatherInfo(responseData) {
