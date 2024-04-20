@@ -60,6 +60,7 @@ function changeBackground(theme, weatherCode) {
 
 
 //grab elements from the dom to manipulate, and give them names
+// ⭐️ likely need to add more vairables for elements from the page
 let cityNameH1 = document.querySelector("h2");
 let cityNameInput; //skip
 let fTemp= document.getElementById("fTemp")
@@ -84,13 +85,17 @@ function searchPollenData() {
   axios.get(`${pollenBaseURL}${pollenParams}`).then(showPollenInfo);
 };
 
+// ⭐️ ⭐️ ⭐️  Olivia will add code here to display the pollen data
 function showPollenInfo(responseData) {
-  // Olivia will add code here to display the pollen data
   console.log(responseData.data);
 }
 
+// ⭐️ ⭐️ ⭐️ Aolani will add code here to display the suggested clothing
 function showSuggestedClothing(weatherType) {
-  // Aolani will add code here to display the suggested clothing
+}
+
+//⭐️ ⭐️ ⭐️ leslie and rebekah will work on this
+fucntion getFiveDayForecast(city) {
 }
 
 // Function to display the weather information
