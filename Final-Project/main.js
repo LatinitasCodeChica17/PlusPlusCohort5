@@ -89,16 +89,20 @@ function searchPollenData() {
 // ⭐️ ⭐️ ⭐️  Olivia will add code here to display the pollen data
 function showPollenInfo(responseData) {
   let weatherData = responseData.data.dailyInfo[0].plantInfo;
-  console.log(weatherData);
-  weatherData = weatherData.filter((item)=> {
+  // console.log(weatherData);
+   weatherData = weatherData.filter((item)=> {
     return item.inSeason === true;
+   })
+  // console.log(weatherData)
+  let listItems = ''
+  weatherData.forEach((item) => {
+    listItems +=`<li><p>Type:<b>${item.displayName}</b></p>
+    <p>Count: ${item.indexInfo.category} </p>
+    <p>Summary: ${item.indexInfo.indexDescription} </p>
+    </li> `
   })
-  console.log(weatherData)
-  // weatherData.forEach((plant) => {
-  //   console.log(plant)
-  // })
 
-  allergyList.innerHTML = weatherData;
+  allergyList.innerHTML = listItems;
 }
 
 // ⭐️ ⭐️ ⭐️ Aolani will add code here to display the suggested clothing
