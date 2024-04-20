@@ -30,33 +30,33 @@ let background = document.querySelector('html')
 
   //thunderstorm
   if (weatherCode >= 200 && weatherCode <= 299) {
-    body.style.color='var(--heavyrainDark)'
-    background.style.background= 'url("./assets/weather_bgs/rain1.jpeg")'
+    body.style.color='var(--heavyrainDark)';
+    background.style.backgroundImage= 'url("./assets/weather_bgs/rain1.jpeg")';
   }
   //drizzle
   if (weatherCode >=300 && weatherCode <=299) {
-    body.style.color='var(--drizzlemedium)'
+    body.style.color='var(--drizzlemedium)';
   }
   // rain
   if (weatherCode >=500 && weatherCode <=599) {
-    body.style.color='var(--heavyrainMedium)'
+    body.style.color='var(--heavyrainMedium)';
   }
   //snow
   if (weatherCode >=600 && weatherCode <=699) {
-    body.style.color='var(--snowyDark)'
+    body.style.color='var(--snowyDark)';
   }
   // atmosphere/fog
   if (weatherCode >=700 && weatherCode <=799) {
-    body.style.color='var(--windyDark)'
+    body.style.color='var(--windyDark)';
   }
   // clear
   if (weatherCode =800) {
-    body.style.color='var(--sunnyDark)'
+    body.style.color='var(--sunnyDark)';
   }
   //clouds
   if (weatherCode >=800 && weatherCode <=809) {
-    body.style.color='var(--cloudyDark)'
-    background.style.background= 'url("./assets/weather_bgs/cloudy2.jpeg")'
+    body.style.color='var(--cloudyDark)';
+    document.body.style.backgroundImage = "url('Final-Project/assets/weather_bgs/cloudy2.jpg')";
   }
   
 }
